@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!-- <input type="text" onkeyup="func()" onkeydown="func1()" /> -->
+   <input type="text" id="txt"/>
+   <input type="text" id="b2"/>
+    <script>
+
+        // function func(){
+        //     let newdiv=document.createElement("h1")
+        //     let para=document.createElement("p")
+        //     para.innerHTML="content"
+        //     newdiv.appendChild(para)
+        //     document.body.append(newdiv)
+        // }
+        // function func1(){
+        //     let newdiv=document.createElement("h1")
+        //     let para=document.createElement("p")
+        //     para.innerHTML="content"
+        //     newdiv.appendChild(para)
+        //     document.body.append(newdiv)
+        // }
+
+        //eventlistner
+
+        let a=document.getElementById("txt")
+        a.addEventListener("keyup",function(){
+            a.style.backgroundColor="green"
+        })
+
+        a.addEventListener("keydown",function(){
+            a.style.backgroundColor="red"
+        })
+        a.addEventListener("mouseenter",()=>{
+            a.style.backgroundColor="grey"
+        })
+        
+        a.addEventListener("mousemove",()=>{
+            a.style.backgroundColor="black"
+        })
+
+        //form events
+        let inp2=document.getElementById("b2")
+        inp2.addEventListener("focus",()=>{
+            inp2.style.backgroundColor="lightblue"
+        })
+        inp2.addEventListener("blur",()=>inp2.style.backgroundColor="blue")
+        
+        
+
+
+        //events
+        //1.keyboard events (onkeyup,onkeydown,onkeypress)
+        //2.mouse evnts ((onmouseover,onmouseenter),(onmouseleave,onmouseout,onmousemove))
+        //3.form events(onfocus,onblur,onchange,onreset,onsubmit)
+        //4.windows events(unload,onload,onresize)
+
+    </script>
+</body>
+</html>
